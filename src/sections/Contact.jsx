@@ -11,7 +11,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 px-6 text-center dark:bg-background bg-background-light transition-colors duration-300">
+    <section id="contact" className="py-24 px-6 text-center">
       <div className="max-w-2xl mx-auto">
         <span className="dark:text-primary text-primary-light font-mono text-lg block mb-4 animate-fadeIn opacity-0">
           05. What's Next?

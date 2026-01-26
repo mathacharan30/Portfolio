@@ -41,7 +41,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center pt-24 pb-12 px-6 dark:bg-background bg-background-light transition-colors duration-300"
+      className="min-h-screen flex items-center justify-center pt-24 pb-12 px-6"
     >
       <div className="max-w-7xl w-full mx-auto">
         <div className="space-y-5">

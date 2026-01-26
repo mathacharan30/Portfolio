@@ -4,7 +4,7 @@ import Icon from "./Icon";
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer className="py-8 text-center dark:text-textDim text-textDim-light font-mono text-sm dark:bg-background bg-background-light transition-colors duration-300">
+    <footer className="py-8 text-center dark:text-textDim text-textDim-light font-mono text-sm">
       <div className="flex justify-center gap-6 mb-4">
         {data.socials.github && (
           <a
