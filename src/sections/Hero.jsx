@@ -21,6 +21,20 @@ export default function Hero() {
     return () => clearInterval(typingInterval);
   }, [name]);
 
+  // Split name for mobile view: "Matha" on first line, rest on second
+  const formatNameForMobile = (text) => {
+    const parts = text.split(" ");
+    if (parts.length >= 2) {
+      return (
+        <>
+          <span className="block md:inline">{parts[0]}</span>{" "}
+          <span className="block md:inline">{parts.slice(1).join(" ")}</span>
+        </>
+      );
+    }
+    return text;
+  };
+
   return (
     <section
       id="home"
@@ -33,7 +47,7 @@ export default function Hero() {
           </span>
 
           <h1 className="text-5xl md:text-7xl font-bold text-textLight tracking-tight mb-2">
-            {displayedName}
+            {formatNameForMobile(displayedName)}
             {!isTypingComplete && (
               <span className="animate-pulse text-primary">|</span>
             )}
