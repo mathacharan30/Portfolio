@@ -11,31 +11,31 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 px-6 text-center">
+    <section id="contact" className="py-24 px-6 text-center dark:bg-background bg-background-light transition-colors duration-300">
       <div className="max-w-2xl mx-auto">
-        <span className="text-primary font-mono text-lg block mb-4">
+        <span className="text-primary font-mono text-lg block mb-4 animate-fadeIn opacity-0">
           05. What's Next?
         </span>
-        <h2 className="text-4xl md:text-5xl font-bold text-textLight mb-6">
+        <h2 className="text-4xl md:text-5xl font-bold dark:text-textLight text-textLight-light mb-6 animate-fadeInUp opacity-0 delay-100">
           Get In Touch
         </h2>
-        <p className="text-textDim text-lg leading-relaxed mb-12">
+        <p className="dark:text-textDim text-textDim-light text-lg leading-relaxed mb-12 animate-fadeInUp opacity-0 delay-200">
           I am currently looking for new opportunities. Whether you have a
           question or just want to say hi, I will try my best to get back to
           you!
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fadeInUp opacity-0 delay-300">
           <a
             href={`https://mail.google.com/mail/?view=cm&fs=1&to=${data.siteMeta.email}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 border border-primary text-primary rounded font-mono hover:bg-primary/10 transition-colors inline-block text-lg"
+            className="px-8 py-4 border border-primary text-primary rounded font-mono hover:bg-primary/10 transition-all duration-300 hover:scale-105 inline-block text-lg"
           >
             Say Hello
           </a>
           <button
             onClick={handleCopyEmail}
-            className="px-8 py-4 border border-primary text-primary rounded font-mono hover:bg-primary/10 transition-colors text-lg"
+            className="px-8 py-4 border border-primary text-primary rounded font-mono hover:bg-primary/10 transition-all duration-300 hover:scale-105 text-lg"
           >
             {copied ? "✓ Copied!" : "Copy Email"}
           </button>

@@ -3,21 +3,22 @@ import Icon from "../components/Icon";
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 px-6">
+    <section id="projects" className="py-20 px-6 dark:bg-background bg-background-light transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
-        <div className="flex items-center gap-4 mb-12">
+        <div className="flex items-center gap-4 mb-12 animate-fadeIn opacity-0">
           <span className="text-primary font-mono text-xl">04.</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-textLight">
+          <h2 className="text-3xl md:text-4xl font-bold dark:text-textLight text-textLight-light">
             Some Things I've Built
           </h2>
-          <div className="h-px bg-surface flex-grow max-w-xs ml-4"></div>
+          <div className="h-px dark:bg-textDim/20 bg-textDim-light/20 flex-grow max-w-xs ml-4"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {data.projects.map((project, idx) => (
             <div
               key={idx}
-              className="bg-secondary rounded-lg p-8 shadow-lg transition-transform duration-300 hover:-translate-y-2 group flex flex-col h-full"
+              className="dark:bg-secondary bg-secondary-light rounded-lg p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:scale-105 group flex flex-col h-full animate-fadeInUp opacity-0"
+              style={{animationDelay: `${(idx + 1) * 100}ms`}}
             >
               <div className="flex justify-between items-center mb-6">
                 <div className="text-primary">
@@ -30,7 +31,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noreferrer"
                       aria-label="GitHub"
-                      className="text-textDim hover:text-primary transition-colors"
+                      className="dark:text-textDim text-textDim-light hover:text-primary transition-colors"
                     >
                       <Icon name="github" size={20} />
                     </a>
@@ -41,7 +42,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noreferrer"
                       aria-label="Live Site"
-                      className="text-textDim hover:text-primary transition-colors"
+                      className="dark:text-textDim text-textDim-light hover:text-primary transition-colors"
                     >
                       <Icon name="external" size={20} />
                     </a>
@@ -49,7 +50,7 @@ export default function Projects() {
                 </div>
               </div>
 
-              <h3 className="text-xl font-bold text-textLight mb-2 group-hover:text-primary transition-colors">
+              <h3 className="text-xl font-bold dark:text-textLight text-textLight-light mb-2 group-hover:text-primary transition-colors">
                 <a
                   href={project.live || project.github}
                   target="_blank"
@@ -59,15 +60,15 @@ export default function Projects() {
                 </a>
               </h3>
 
-              <p className="text-textDim mb-6 leading-relaxed text-sm flex-grow">
+              <p className="dark:text-textDim text-textDim-light mb-6 leading-relaxed text-sm flex-grow">
                 {project.desc}
               </p>
 
-              <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t border-surface">
+              <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t dark:border-textDim/20 border-textDim-light/20">
                 {project.tech.map((tech) => (
                   <span
                     key={tech}
-                    className="font-mono text-xs text-textDim opacity-80 mr-2"
+                    className="font-mono text-xs dark:text-textDim text-textDim-light opacity-80 mr-2"
                   >
                     {tech}
                   </span>
