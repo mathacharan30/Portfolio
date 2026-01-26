@@ -1,7 +1,25 @@
+import { useState, useEffect } from "react";
 import data from "../data";
 
 export default function Hero() {
   const { name, titleSuffix, hero, resumePath } = data.siteMeta;
+  const [displayedName, setDisplayedName] = useState("");
+  const [isTypingComplete, setIsTypingComplete] = useState(false);
+
+  useEffect(() => {
+    let currentIndex = 0;
+    const typingInterval = setInterval(() => {
+      if (currentIndex <= name.length) {
+        setDisplayedName(name.slice(0, currentIndex));
+        currentIndex++;
+      } else {
+        setIsTypingComplete(true);
+        clearInterval(typingInterval);
+      }
+    }, 100); // 100ms per character
+
+    return () => clearInterval(typingInterval);
+  }, [name]);
 
   return (
     <section
@@ -15,7 +33,11 @@ export default function Hero() {
           </span>
 
           <h1 className="text-5xl md:text-7xl font-bold text-textLight tracking-tight mb-2">
-            {name}.
+            {displayedName}
+            {!isTypingComplete && (
+              <span className="animate-pulse text-primary">|</span>
+            )}
+            {isTypingComplete && "."}
           </h1>
 
           <h2 className="text-4xl md:text-6xl font-bold text-textDim mb-6">
