@@ -39,19 +39,19 @@ export default function Navbar() {
 
           {/* Mobile Toggle */}
           <button
-            className="md:hidden text-primary focus:outline-none z-50 relative"
+            className="md:hidden dark:text-primary text-primary-light focus:outline-none z-50 relative"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
             <div className="w-7 h-5 flex flex-col justify-between">
               <span
-                className={`w-full h-0.5 bg-primary transition-transform duration-300 ${isOpen ? "rotate-45 translate-y-2" : ""}`}
+                className={`w-full h-0.5 dark:bg-primary bg-primary-light transition-transform duration-300 ${isOpen ? "rotate-45 translate-y-2" : ""}`}
               ></span>
               <span
-                className={`w-full h-0.5 bg-primary transition-opacity duration-300 ${isOpen ? "opacity-0" : "opacity-100"}`}
+                className={`w-full h-0.5 dark:bg-primary bg-primary-light transition-opacity duration-300 ${isOpen ? "opacity-0" : "opacity-100"}`}
               ></span>
               <span
-                className={`w-full h-0.5 bg-primary transition-transform duration-300 ${isOpen ? "-rotate-45 -translate-y-2.5" : ""}`}
+                className={`w-full h-0.5 dark:bg-primary bg-primary-light transition-transform duration-300 ${isOpen ? "-rotate-45 -translate-y-2.5" : ""}`}
               ></span>
             </div>
           </button>
