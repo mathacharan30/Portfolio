@@ -5,7 +5,7 @@ export default function Skills() {
     <section id="skills" className="py-20 px-6 dark:bg-background bg-background-light transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-4 mb-12 animate-fadeIn opacity-0">
-          <span className="text-primary font-mono text-xl">01.</span>
+          <span className="dark:text-primary text-primary-light font-mono text-xl">01.</span>
           <h2 className="text-3xl md:text-4xl font-bold dark:text-textLight text-textLight-light">
             Technical Skills
           </h2>
@@ -21,7 +21,7 @@ export default function Skills() {
               {data.skills.frontend.map((skill) => (
                 <li
                   key={skill}
-                  className="flex items-center dark:text-textDim text-textDim-light font-mono text-sm before:content-['▹'] before:text-primary before:mr-2"
+                  className="flex items-center dark:text-textDim text-textDim-light font-mono text-sm before:content-['▹'] dark:before:text-primary before:text-primary-light before:mr-2"
                 >
                   {skill}
                 </li>
@@ -37,7 +37,7 @@ export default function Skills() {
               {data.skills.backend.map((skill) => (
                 <li
                   key={skill}
-                  className="flex items-center dark:text-textDim text-textDim-light font-mono text-sm before:content-['▹'] before:text-primary before:mr-2"
+                  className="flex items-center dark:text-textDim text-textDim-light font-mono text-sm before:content-['▹'] dark:before:text-primary before:text-primary-light before:mr-2"
                 >
                   {skill}
                 </li>
@@ -53,7 +53,7 @@ export default function Skills() {
               {data.skills.problemSolving.map((skill) => (
                 <li
                   key={skill}
-                  className="flex items-center dark:text-textDim text-textDim-light font-mono text-sm before:content-['▹'] before:text-primary before:mr-2"
+                  className="flex items-center dark:text-textDim text-textDim-light font-mono text-sm before:content-['▹'] dark:before:text-primary before:text-primary-light before:mr-2"
                 >
                   {skill}
                 </li>

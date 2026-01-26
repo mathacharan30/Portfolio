@@ -5,10 +5,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#64ffda",
+        primary: {
+          DEFAULT: "#64ffda",
+          light: "#0891b2", // Cyan-600 - professional teal for light mode
+        },
         secondary: {
           DEFAULT: "#112240",
-          light: "#e8f4f8",
+          light: "#f0f9ff", // Sky-50 - very light blue
         },
         background: {
           DEFAULT: "#0a192f",
@@ -16,11 +19,11 @@ export default {
         },
         textLight: {
           DEFAULT: "#ccd6f6",
-          light: "#1a202c",
+          light: "#0f172a", // Slate-900 - dark text for light mode
         },
         textDim: {
           DEFAULT: "#8892b0",
-          light: "#4a5568",
+          light: "#64748b", // Slate-500 - medium gray
         },
       },
       fontFamily: {

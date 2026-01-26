@@ -6,7 +6,7 @@ export default function Projects() {
     <section id="projects" className="py-20 px-6 dark:bg-background bg-background-light transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-4 mb-12 animate-fadeIn opacity-0">
-          <span className="text-primary font-mono text-xl">04.</span>
+          <span className="dark:text-primary text-primary-light font-mono text-xl">04.</span>
           <h2 className="text-3xl md:text-4xl font-bold dark:text-textLight text-textLight-light">
             Some Things I've Built
           </h2>
@@ -21,7 +21,7 @@ export default function Projects() {
               style={{animationDelay: `${(idx + 1) * 100}ms`}}
             >
               <div className="flex justify-between items-center mb-6">
-                <div className="text-primary">
+                <div className="dark:text-primary text-primary-light">
                   <Icon name="file" size={40} />
                 </div>
                 <div className="flex gap-4">
@@ -31,7 +31,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noreferrer"
                       aria-label="GitHub"
-                      className="dark:text-textDim text-textDim-light hover:text-primary transition-colors"
+                      className="dark:text-textDim text-textDim-light dark:hover:text-primary hover:text-primary-light transition-colors"
                     >
                       <Icon name="github" size={20} />
                     </a>
@@ -42,7 +42,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noreferrer"
                       aria-label="Live Site"
-                      className="dark:text-textDim text-textDim-light hover:text-primary transition-colors"
+                      className="dark:text-textDim text-textDim-light dark:hover:text-primary hover:text-primary-light transition-colors"
                     >
                       <Icon name="external" size={20} />
                     </a>
@@ -50,7 +50,7 @@ export default function Projects() {
                 </div>
               </div>
 
-              <h3 className="text-xl font-bold dark:text-textLight text-textLight-light mb-2 group-hover:text-primary transition-colors">
+              <h3 className="text-xl font-bold dark:text-textLight text-textLight-light mb-2 dark:group-hover:text-primary group-hover:text-primary-light transition-colors">
                 <a
                   href={project.live || project.github}
                   target="_blank"

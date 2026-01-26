@@ -6,13 +6,13 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-full hover:bg-primary/10 transition-all duration-300 group"
+      className="p-2 rounded-full dark:hover:bg-primary/10 hover:bg-primary-light/10 transition-all duration-300 group"
       aria-label="Toggle theme"
     >
       {isDark ? (
         // Sun icon for light mode
         <svg
-          className="w-5 h-5 text-primary group-hover:rotate-180 transition-transform duration-500"
+          className="w-5 h-5 dark:text-primary text-primary-light group-hover:rotate-180 transition-transform duration-500"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -23,7 +23,7 @@ export default function ThemeToggle() {
       ) : (
         // Moon icon for dark mode
         <svg
-          className="w-5 h-5 text-primary group-hover:-rotate-12 transition-transform duration-500"
+          className="w-5 h-5 dark:text-primary text-primary-light group-hover:-rotate-12 transition-transform duration-500"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"

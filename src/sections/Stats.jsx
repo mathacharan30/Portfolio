@@ -9,9 +9,13 @@ export default function Stats() {
   return (
     <section className="py-20 px-6 dark:bg-background bg-background-light transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl font-bold font-mono text-center dark:text-textLight text-textLight-light mb-12 animate-fadeIn opacity-0">
-          <span className="text-primary">02.</span> Stats
-        </h2>
+        <div className="flex items-center gap-4 mb-12 animate-fadeIn opacity-0">
+          <span className="dark:text-primary text-primary-light font-mono text-xl">02.</span>
+          <h2 className="text-3xl md:text-4xl font-bold dark:text-textLight text-textLight-light">
+            Stats
+          </h2>
+          <div className="h-px dark:bg-textDim/20 bg-textDim-light/20 flex-grow max-w-xs ml-4"></div>
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 max-w-6xl mx-auto">
           {ghUser && (
             <div className="hover:-translate-y-2 hover:scale-105 transition-all duration-300 w-full aspect-[1.5/1] overflow-hidden rounded-lg animate-fadeInUp opacity-0 delay-100">

@@ -9,24 +9,23 @@
   }
 
   body {
-    @apply bg-background text-textDim font-sans antialiased transition-colors duration-300;
-    background-image:
-      linear-gradient(rgba(100, 255, 218, 0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(100, 255, 218, 0.03) 1px, transparent 1px);
+    @apply font-sans antialiased transition-colors duration-300;
     background-size: 50px 50px;
     background-position: -1px -1px;
   }
 
   .dark body {
+    @apply bg-background text-textDim;
     background-image:
       linear-gradient(rgba(100, 255, 218, 0.03) 1px, transparent 1px),
       linear-gradient(90deg, rgba(100, 255, 218, 0.03) 1px, transparent 1px);
   }
 
   body:not(.dark) {
+    @apply bg-background-light text-textDim-light;
     background-image:
-      linear-gradient(rgba(100, 255, 218, 0.08) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(100, 255, 218, 0.08) 1px, transparent 1px);
+      linear-gradient(rgba(8, 145, 178, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(8, 145, 178, 0.06) 1px, transparent 1px);
   }
 
   h1,

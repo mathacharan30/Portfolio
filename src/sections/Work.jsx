@@ -5,7 +5,7 @@ export default function Work() {
     <section id="work" className="py-20 px-6 dark:bg-background bg-background-light transition-colors duration-300">
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-4 mb-12 animate-fadeIn opacity-0">
-          <span className="text-primary font-mono text-xl">03.</span>
+          <span className="dark:text-primary text-primary-light font-mono text-xl">03.</span>
           <h2 className="text-3xl md:text-4xl font-bold dark:text-textLight text-textLight-light">
             Where I've Worked
           </h2>
@@ -21,7 +21,7 @@ export default function Work() {
                 <h3 className="text-xl font-bold dark:text-textLight text-textLight-light inline-block mr-2">
                   {job.title}
                 </h3>
-                <span className="text-primary text-lg">@ {job.company}</span>
+                <span className="dark:text-primary text-primary-light text-lg">@ {job.company}</span>
               </div>
               <p className="font-mono text-sm dark:text-textDim text-textDim-light mb-4">{job.date}</p>
 
@@ -29,7 +29,7 @@ export default function Work() {
                 {job.bullets.map((bullet, i) => (
                   <li
                     key={i}
-                    className="flex items-start dark:text-textDim text-textDim-light relative pl-6 before:content-['▹'] before:text-primary before:absolute before:left-0"
+                    className="flex items-start dark:text-textDim text-textDim-light relative pl-6 before:content-['▹'] dark:before:text-primary before:text-primary-light before:absolute before:left-0"
                   >
                     <span className="leading-relaxed">{bullet}</span>
                   </li>

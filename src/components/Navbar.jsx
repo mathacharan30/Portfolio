@@ -18,7 +18,7 @@ export default function Navbar() {
         <div className={`max-w-5xl mx-auto transition-all duration-300 ${scrolled ? "bg-secondary/40 dark:bg-secondary/40 backdrop-blur-lg shadow-2xl border border-primary/10" : "bg-secondary/20 dark:bg-secondary/20 backdrop-blur-md border border-primary/5"} rounded-full px-4 md:px-8 h-14 md:h-16 flex items-center justify-between`}>
           <a
             href="#home"
-            className="text-primary font-mono text-base md:text-lg font-semibold tracking-wide hover:text-primary/80 transition-colors"
+            className="dark:text-primary text-primary-light font-mono text-base md:text-lg font-semibold tracking-wide dark:hover:text-primary/80 hover:text-primary-light/80 transition-colors"
           >
             &lt;{data.siteMeta.name} /&gt;
           </a>
@@ -29,7 +29,7 @@ export default function Navbar() {
               <a
                 key={item.id}
                 href={`#${item.id}`}
-                className="text-textDim dark:text-textDim hover:text-primary font-mono text-sm group transition-colors"
+                className="dark:text-textDim text-textDim-light dark:hover:text-primary hover:text-primary-light font-mono text-sm group transition-colors"
               >
                 {item.label}
               </a>
@@ -72,7 +72,7 @@ export default function Navbar() {
           <a
             key={item.id}
             href={`#${item.id}`}
-            className="text-textDim dark:text-textDim hover:text-primary font-mono text-lg flex flex-col items-center gap-2 transition-colors"
+            className="dark:text-textDim text-textDim-light dark:hover:text-primary hover:text-primary-light font-mono text-lg flex flex-col items-center gap-2 transition-colors"
             onClick={() => setIsOpen(false)}
           >
             {item.label}

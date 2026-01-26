@@ -45,14 +45,14 @@ export default function Hero() {
     >
       <div className="max-w-7xl w-full mx-auto">
         <div className="space-y-5">
-          <span className="text-primary font-mono text-lg block mb-4 animate-fadeIn opacity-0">
+          <span className="dark:text-primary text-primary-light font-mono text-lg block mb-4 animate-fadeIn opacity-0">
             Hi, my name is
           </span>
 
           <h1 className="text-5xl md:text-7xl font-bold dark:text-textLight text-textLight-light tracking-tight mb-2 animate-fadeInUp opacity-0 delay-100">
             {formatNameForMobile(displayedName, isTypingComplete)}
             {!isTypingComplete && (
-              <span className="animate-pulse text-primary">|</span>
+              <span className="animate-pulse dark:text-primary text-primary-light">|</span>
             )}
           </h1>
 
@@ -67,7 +67,7 @@ export default function Hero() {
           <div className="flex flex-wrap gap-4 animate-fadeInUp opacity-0 delay-400">
             <a
               href="#projects"
-              className="px-8 py-4 border-2 border-primary text-primary rounded font-mono hover:bg-primary/10 transition-all duration-300 hover:scale-105"
+              className="px-8 py-4 border-2 dark:border-primary border-primary-light dark:text-primary text-primary-light rounded font-mono dark:hover:bg-primary/10 hover:bg-primary-light/10 transition-all duration-300 hover:scale-105"
             >
               Check out my work
             </a>
