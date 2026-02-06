@@ -27,9 +27,31 @@ export default {
     twitter: "https://x.com/MathaCharan",
   },
   skills: {
-    frontend: ["React", "HTML", "CSS", "JavaScript"],
-    backend: ["Node.js", "Express", "MongoDB", "Supabase"],
-    problemSolving: ["DSA", "Algorithms", "Systematic debugging"],
+    coreCS: [
+      "Data Structures & Algorithms", 
+      "Object-Oriented Programming", 
+      "Java", 
+      "C (Intermediate)"
+    ],
+    frontend: [
+      "React & Redux", 
+      "JavaScript (ES6+)", 
+      "HTML5 & CSS3", 
+      "Tailwind CSS"
+    ],
+    backend: [
+      "Node.js & Express.js", 
+      "Python (NumPy, Pandas, Matplotlib)",
+      "MongoDB & SQL", 
+      "Supabase (Vector Database)"
+    ],
+    aiTools: [
+      "Retrieval-Augmented Generation (RAG)", 
+      "Vector Embeddings", 
+      "Gemini API", 
+      "Git & Version Control", 
+      "AWS (EC2, S3, IAM)"
+    ],
   },
   experience: [
     {
@@ -86,9 +108,10 @@ export default {
   labels: {
     skillsTitle: 'Skills',
     skills: {
+      coreCS: 'Core CS',
       frontend: 'Frontend',
-      backend: 'Backend',
-      problemSolving: 'Problem Solving',
+      backend: 'Backend & Data',
+      aiTools: 'AI & Tools',
     },
     stats: {
       heading: 'GitHub & LeetCode',
