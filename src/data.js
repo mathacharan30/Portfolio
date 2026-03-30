@@ -95,7 +95,7 @@ export default {
       desc: "RAG system using Supabase vector DB and Gemini API.",
       tech: ["React", "Node", "Supabase"],
       github: "https://github.com/mathacharan30/Major_Project",
-      live: "",
+      live: "https://supply-chain-chatbot-frontend-1.onrender.com/",
     },
     {
       title: "Assured Services Mysore – Business Website",
@@ -103,6 +103,13 @@ export default {
       tech: ["React", "Tailwind CSS", "JavaScript", "Hosting"],
       github: "https://github.com/mathacharan30/AssuredServices",
       live: "https://www.assuredservicesmys.com/",
+    },
+    {
+      title: "SKMK College of Education – Official College Website",
+      desc: "Designed and developed the official website for SKMK College of Education, featuring information about courses, admissions, faculty, campus activities, notices, and contact details with a responsive and user-friendly interface.",
+      tech: ["React", "Tailwind CSS", "JavaScript", "Hosting"],
+      github: "https://github.com/mathacharan30/SMKK-College",
+      live: "https://www.kaginele.edu.in/",
     }
   ],
   labels: {
